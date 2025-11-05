@@ -1,7 +1,7 @@
 ---
 id: task-00004
 title: Prevent Laravel Sail usage in project
-status: In Progress
+status: Done
 assignee:
   - codex
 created_date: '2025-11-05 09:24'
@@ -18,9 +18,9 @@ Ensure the repository enforces plain docker compose workflows by removing Larave
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Laravel Sail dependency and artifacts are removed from the project.
-- [ ] #2 Documentation explicitly states that Sail and other Docker wrappers are unsupported.
-- [ ] #3 Repository includes guardrails (e.g., Git hooks or scripts) preventing Sail from being reintroduced.
+- [x] #1 Laravel Sail dependency and artifacts are removed from the project.
+- [x] #2 Documentation explicitly states that Sail and other Docker wrappers are unsupported.
+- [x] #3 Repository includes guardrails (e.g., Git hooks or scripts) preventing Sail from being reintroduced.
 <!-- AC:END -->
 
 ## Implementation Plan
