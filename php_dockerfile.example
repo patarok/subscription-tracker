@@ -1,0 +1,31 @@
+FROM php:8.3-fpm-alpine
+
+# Install core PHP extensions (Laravel requirements)
+RUN apk update && apk add \
+    git \
+    curl \
+    libzip-dev \
+    libpng-dev \
+    libonig-dev \
+    mysql-client \
+    autoconf \
+    g++ \
+    make \
+    # Install required PHP extensions
+    && docker-php-ext-install pdo_mysql opcache zip \
+    # Install Redis extension
+    && pecl install redis \
+    && docker-php-ext-enable redis \
+    # Install Composer
+    && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Set working directory
+WORKDIR /var/www/html
+
+# Create a non-root user (important for security and file permissions)
+ARG WWWUSER=1000
+RUN adduser -D -u $WWWUSER www
+RUN chown -R www:www /var/www/html
+
+# Switch to the non-root user
+USER www

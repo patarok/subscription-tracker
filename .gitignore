@@ -1,29 +1,24 @@
-# -----------------------------------
-# Node / Bun
-# -----------------------------------
-/node_modules
-/dist
-/build
-.env
-.npm
-npm-debug.log
+*.log
 .DS_Store
-
-# -----------------------------------
-# Backlog.md specific
-# -----------------------------------
-# By default, all task files are committed, but if backlog.md 
-# creates any temporary files or output reports you want to ignore, 
-# you can add them here.
-# For example, if you export the board view to a local file:
-# backlog-board-export.md 
-
-# -----------------------------------
-# Docker
-# -----------------------------------
-# Ignore any built images/volumes if they were created locally
-*.swp
-*.bak
-*.tmp
-# Ignore .env files used by docker-compose for secrets/config
 .env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+Homestead.json
+Homestead.yaml
+Thumbs.db
