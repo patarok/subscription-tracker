@@ -1,7 +1,7 @@
 ---
 id: task-00002
 title: Implement Docker Compose environment for Laravel stack
-status: In Progress
+status: Done
 assignee:
   - codex
 created_date: '2025-11-04 22:28'
@@ -19,9 +19,9 @@ Set up a Docker Compose configuration that supports the Laravel 12 application a
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 `docker-compose.yml` defines services for the Laravel app, nginx, MySQL, Redis, Mailhog, and queue worker.
-- [ ] #2 Services share appropriate networks, volumes, and environment configuration so they can communicate out of the box.
-- [ ] #3 Documentation or inline comments explain how to start the environment and any prerequisites.
+- [x] #1 `docker-compose.yml` defines services for the Laravel app, nginx, MySQL, Redis, Mailhog, and queue worker.
+- [x] #2 Services share appropriate networks, volumes, and environment configuration so they can communicate out of the box.
+- [x] #3 Documentation or inline comments explain how to start the environment and any prerequisites.
 <!-- AC:END -->
 
 ## Implementation Plan
