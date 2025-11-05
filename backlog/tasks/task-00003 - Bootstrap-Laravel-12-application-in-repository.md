@@ -1,9 +1,11 @@
 ---
 id: task-00003
 title: Bootstrap Laravel 12 application in repository
-status: To Do
-assignee: []
+status: In Progress
+assignee:
+  - codex
 created_date: '2025-11-05 08:35'
+updated_date: '2025-11-05 08:36'
 labels: []
 dependencies: []
 ---
