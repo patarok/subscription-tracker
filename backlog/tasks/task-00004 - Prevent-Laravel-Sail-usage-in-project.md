@@ -5,7 +5,7 @@ status: In Progress
 assignee:
   - codex
 created_date: '2025-11-05 09:24'
-updated_date: '2025-11-05 09:24'
+updated_date: '2025-11-05 09:40'
 labels: []
 dependencies: []
 ---
@@ -30,3 +30,9 @@ Ensure the repository enforces plain docker compose workflows by removing Larave
 - Update repository documentation to state docker compose is the only supported workflow and describe hook setup.
 - Add Git hook guardrails to fail commits introducing Sail references, with instructions for enabling them.
 <!-- SECTION:PLAN:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Removed laravel/sail from composer require-dev (and symfony/yaml), verified Laravel still runs, updated README to document docker-compose-only policy and hook setup, and added `.githooks/pre-commit` guard that blocks Sail artifacts or commands.
+<!-- SECTION:NOTES:END -->
