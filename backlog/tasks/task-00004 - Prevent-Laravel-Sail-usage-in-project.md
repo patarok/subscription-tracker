@@ -22,3 +22,11 @@ Ensure the repository enforces plain docker compose workflows by removing Larave
 - [ ] #2 Documentation explicitly states that Sail and other Docker wrappers are unsupported.
 - [ ] #3 Repository includes guardrails (e.g., Git hooks or scripts) preventing Sail from being reintroduced.
 <!-- AC:END -->
+
+## Implementation Plan
+
+<!-- SECTION:PLAN:BEGIN -->
+- Remove `laravel/sail` from composer dependencies and clean any associated vendor binaries.
+- Update repository documentation to state docker compose is the only supported workflow and describe hook setup.
+- Add Git hook guardrails to fail commits introducing Sail references, with instructions for enabling them.
+<!-- SECTION:PLAN:END -->
