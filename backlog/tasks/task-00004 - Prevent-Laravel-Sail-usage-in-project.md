@@ -1,9 +1,11 @@
 ---
 id: task-00004
 title: Prevent Laravel Sail usage in project
-status: To Do
-assignee: []
+status: In Progress
+assignee:
+  - codex
 created_date: '2025-11-05 09:24'
+updated_date: '2025-11-05 09:24'
 labels: []
 dependencies: []
 ---
